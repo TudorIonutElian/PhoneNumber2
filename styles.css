@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@keyframes FadeAnimation {
+    0% {
+        opacity: .1;
+    }
+    100% {
+        opacity: .9;
+    }
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+#container {
+    width: 80%;
+    height: 400px;
+    margin: 30px auto;
+    padding: 50px;
+}
+.phoneNumber {
+    padding: 5px;
+    text-align: center;
+    display: block;
+    min-width: 200px;
+    margin-bottom: 5px;
+}
+#validateNumber {
+    background-color: #0492f1;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    min-width: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 5px;
+}
+#validateNumber:hover {
+    background-color: #fff;
+    color: #0492f1;
+    border: 1px solid #0492f1;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#result {
+    margin-top: 20px;
+    padding: 10px;
+}
+.result {
+    display: none;
+}
+.result-valid {
+    display: block;
+    background-color: #0f7402d7;
+    color: #ffffff;
+    font-weight: bold;
+    animation: FadeAnimation .6s ease-in;
+}
+.result-invalid {
+    display: block;
+    background-color: #e70000d7;
+    color: #fff;
+    font-weight: bold;
+    animation: FadeAnimation .6s ease-in;
+}
+/* ----- Container Header CSS Rules -----*/
+
+/* ----- Container Body CSS Rules -----*/
+
+/* ----- Container Footer CSS Rules -----*/
